@@ -1,0 +1,137 @@
+.header {
+  width: 100%;
+  margin: 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+  background: #fff;
+  z-index: 5;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header.hide {
+  transform: translateY(-60px);
+}
+
+.menu-service-button {
+  margin: 0;
+  height: 40px;
+  position: absolute;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.9);
+}
+
+.menu-service-button:hover {
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+
+}
+
+.contact-link:hover {
+  opacity: 0.7;
+}
+
+.button__text:hover {
+  font-weight: 500;
+}
+.header__logo:hover {
+  opacity: 0.7;
+}
+
+.contacts {
+  margin-right: 20px;
+  width: max-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-link {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header__logo {
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  background: url(../../images/ByMenu.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.header__logo.create {
+  background: url(../../images/Logo40x40.svg);
+}
+
+.header__button__group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .header {
+    width: 100%;
+  }
+  .header__logo {
+    margin: 10px 10px 10px 0;
+  }
+  .top-plate-header {
+    margin: 10px 10px 10px;
+  }
+  .header__button__group {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+  }
+  .top-plate-header {
+    background: url(../../images/Logo40x40.svg);
+    margin: 10px 10px 10px;
+  }
+
+  .contact-links {
+    gap: 5px;
+  }
+}

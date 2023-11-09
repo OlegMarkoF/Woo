@@ -1,0 +1,113 @@
+.content {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 1500px; */
+}
+
+.calc {
+  height: 360px;
+}
+
+.title {
+  margin: 30px 0;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+.content__info {
+  padding: 120px 80px 0;
+}
+
+.main__img {
+  /* background-image: url(../../images/girl.png);
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  /* background-position-x: right; */
+  /* object-fit: cover; */
+  width: 100%;
+}
+
+.main__img__photo {
+  width: 100%;
+  object-fit: contain;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+
+.features-block {
+  margin: 0;
+  padding: 25px;
+  max-width: 233px;
+  height: 180px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.features-block__text {
+  margin: 0;
+  padding: 0;
+  min-width: 115px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.features-block__img {
+  width: 25px;
+  height: 25px;
+}
+
+.features-flex {
+  width: 100%;
+  display: grid;
+  /* grid-auto-flow: column;  */
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 15px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__info {
+    padding: 120px 30px 0;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .features-flex {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    margin-bottom: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .features-block {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 20px;
+    display: inline-block;
+  }
+  .features-block__text {
+    font-size: 15px;
+  }
+}
+
+
